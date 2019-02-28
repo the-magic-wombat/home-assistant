@@ -23,8 +23,8 @@ namespace HomeAssistantDemo
             // rounds the corners of the program window
             this.FormBorderStyle = FormBorderStyle.None;    
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            homePanel.BackColor = Color.FromArgb(25, 66, 80);   //loads the program with "clicked" button
 
-            
         }
 
         private void mainForm_Load(object sender, EventArgs e)
@@ -77,10 +77,10 @@ namespace HomeAssistantDemo
 
         private void togglePanelsColor(Panel clickedPanel)
         {
-            homePanel.BackColor = Color.FromArgb(42, 49, 50);
-            statsPanel.BackColor = Color.FromArgb(42, 49, 50);
-            settingsPanel.BackColor = Color.FromArgb(42, 49, 50);
-            clickedPanel.BackColor = Color.FromArgb(21, 26, 26);     // Color of the clicked panel
+            homePanel.BackColor = Color.FromArgb(72, 117, 131);
+            statsPanel.BackColor = Color.FromArgb(72, 117, 131);
+            settingsPanel.BackColor = Color.FromArgb(72, 117, 131);
+            clickedPanel.BackColor = Color.FromArgb(25, 66, 80);     // Color of the clicked panel
         }
 
         #endregion
@@ -89,10 +89,10 @@ namespace HomeAssistantDemo
         #region - Creates a MySqlConnection (dbCon) -
 
         MySqlConnection dbCon = new MySqlConnection(
-                    "Server=localhost; " +
-                    "Database=minionsdb; " +
-                    "Uid = root; " +
-                    "Pwd = 123456 ");
+                    "Server=remotemysql.com; " +
+                    "Database=MxOJ0NTKIO; " +
+                    "Uid = MxOJ0NTKIO; " +
+                    "Pwd = 7QwUSwSfbA ");
 
         #endregion
 
@@ -115,13 +115,26 @@ namespace HomeAssistantDemo
         #region - Allows moving of the form -
 
         int mouseX = 0, mouseY = 0; 
-        bool clicked = false; 
-        
-        private void topPanel_MouseDown(object sender, MouseEventArgs e)
+        private bool clicked = false; 
+
+        public bool Clicked
+        {
+            get
+            {
+                return this.clicked;
+            }
+            set
+            {
+                this.clicked = value;
+            }
+        }
+
+    public void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
             clicked = true;
             mouseX = e.X;
             mouseY = e.Y;
+            
         }
 
         private void topPanel_MouseMove(object sender, MouseEventArgs e)
@@ -137,7 +150,13 @@ namespace HomeAssistantDemo
             clicked = false;
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
+
 
         #region - Creates round rectangle (to round the edges of the window) - 
 

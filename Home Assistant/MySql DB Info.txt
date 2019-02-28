@@ -1,0 +1,15 @@
+Username: MxOJ0NTKIO
+
+Password: 7QwUSwSfbA
+
+Database Name: MxOJ0NTKIO
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+MySqlConnection dbCon = new MySqlConnection("Server=remotemysql.com; " +
+                    "Database=MxOJ0NTKIO; " +
+                    "Uid = MxOJ0NTKIO; " +
+                    "Pwd = 7QwUSwSfbA ");

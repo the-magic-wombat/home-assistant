@@ -1,4 +1,6 @@
-﻿namespace HomeAssistantDemo
+﻿using System;
+
+namespace HomeAssistantDemo
 {
     partial class mainForm
     {
@@ -40,8 +42,8 @@
             this.statsLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.settingsWindow = new HomeAssistantDemo.SettingWindow();
-            this.homeWindow = new HomeAssistantDemo.HomeWindow();
             this.statsWindow = new HomeAssistantDemo.StatsWindow();
+            this.homeWindow = new HomeAssistantDemo.HomeWindow();
             this.smallPanelBottom = new System.Windows.Forms.PictureBox();
             this.lb_minimize = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sidePanel)).BeginInit();
@@ -58,34 +60,34 @@
             // 
             this.lb_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_close.AutoSize = true;
-            this.lb_close.BackColor = System.Drawing.Color.LightGray;
-            this.lb_close.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            this.lb_close.Location = new System.Drawing.Point(739, 0);
+            this.lb_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
+            this.lb_close.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.lb_close.Location = new System.Drawing.Point(828, 12);
             this.lb_close.Margin = new System.Windows.Forms.Padding(0);
             this.lb_close.Name = "lb_close";
-            this.lb_close.Size = new System.Drawing.Size(35, 37);
+            this.lb_close.Size = new System.Drawing.Size(25, 28);
             this.lb_close.TabIndex = 0;
             this.lb_close.Text = "x";
             this.lb_close.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lb_close_MouseClick);
             // 
             // sidePanel
             // 
-            this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel.Location = new System.Drawing.Point(0, 37);
+            this.sidePanel.Location = new System.Drawing.Point(0, 51);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(142, 428);
+            this.sidePanel.Size = new System.Drawing.Size(190, 432);
             this.sidePanel.TabIndex = 1;
             this.sidePanel.TabStop = false;
             // 
             // topPanel
             // 
-            this.topPanel.BackColor = System.Drawing.Color.LightGray;
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(774, 37);
+            this.topPanel.Size = new System.Drawing.Size(862, 51);
             this.topPanel.TabIndex = 2;
             this.topPanel.TabStop = false;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
@@ -94,22 +96,22 @@
             // 
             // smallPanelTop
             // 
-            this.smallPanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(107)))), ((int)(((byte)(135)))));
+            this.smallPanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(90)))), ((int)(((byte)(105)))));
             this.smallPanelTop.Location = new System.Drawing.Point(0, 0);
             this.smallPanelTop.Margin = new System.Windows.Forms.Padding(0);
             this.smallPanelTop.Name = "smallPanelTop";
-            this.smallPanelTop.Size = new System.Drawing.Size(142, 37);
+            this.smallPanelTop.Size = new System.Drawing.Size(190, 51);
             this.smallPanelTop.TabIndex = 3;
             this.smallPanelTop.TabStop = false;
             // 
             // homePanel
             // 
-            this.homePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            this.homePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.homePanel.Controls.Add(this.homeLabel);
-            this.homePanel.Location = new System.Drawing.Point(0, 37);
+            this.homePanel.Location = new System.Drawing.Point(0, 51);
             this.homePanel.Margin = new System.Windows.Forms.Padding(0);
             this.homePanel.Name = "homePanel";
-            this.homePanel.Size = new System.Drawing.Size(142, 62);
+            this.homePanel.Size = new System.Drawing.Size(190, 47);
             this.homePanel.TabIndex = 4;
             this.homePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homePanel_MouseClick);
             // 
@@ -119,8 +121,8 @@
             this.homeLabel.AutoSize = true;
             this.homeLabel.BackColor = System.Drawing.Color.Transparent;
             this.homeLabel.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.homeLabel.Location = new System.Drawing.Point(30, 17);
+            this.homeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
+            this.homeLabel.Location = new System.Drawing.Point(54, 9);
             this.homeLabel.Name = "homeLabel";
             this.homeLabel.Size = new System.Drawing.Size(75, 29);
             this.homeLabel.TabIndex = 0;
@@ -129,12 +131,12 @@
             // 
             // settingsPanel
             // 
-            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.settingsPanel.Controls.Add(this.settingsLabel);
-            this.settingsPanel.Location = new System.Drawing.Point(0, 161);
+            this.settingsPanel.Location = new System.Drawing.Point(0, 145);
             this.settingsPanel.Margin = new System.Windows.Forms.Padding(0);
             this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(142, 62);
+            this.settingsPanel.Size = new System.Drawing.Size(190, 47);
             this.settingsPanel.TabIndex = 5;
             this.settingsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.settingsPanel_MouseClick);
             // 
@@ -144,8 +146,8 @@
             this.settingsLabel.AutoSize = true;
             this.settingsLabel.BackColor = System.Drawing.Color.Transparent;
             this.settingsLabel.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.settingsLabel.Location = new System.Drawing.Point(21, 17);
+            this.settingsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
+            this.settingsLabel.Location = new System.Drawing.Point(45, 9);
             this.settingsLabel.Name = "settingsLabel";
             this.settingsLabel.Size = new System.Drawing.Size(97, 29);
             this.settingsLabel.TabIndex = 1;
@@ -154,12 +156,12 @@
             // 
             // statsPanel
             // 
-            this.statsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            this.statsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.statsPanel.Controls.Add(this.statsLabel);
-            this.statsPanel.Location = new System.Drawing.Point(0, 99);
+            this.statsPanel.Location = new System.Drawing.Point(0, 98);
             this.statsPanel.Margin = new System.Windows.Forms.Padding(0);
             this.statsPanel.Name = "statsPanel";
-            this.statsPanel.Size = new System.Drawing.Size(142, 62);
+            this.statsPanel.Size = new System.Drawing.Size(190, 47);
             this.statsPanel.TabIndex = 5;
             this.statsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.statsPanel_MouseClick);
             // 
@@ -169,8 +171,8 @@
             this.statsLabel.AutoSize = true;
             this.statsLabel.BackColor = System.Drawing.Color.Transparent;
             this.statsLabel.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statsLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.statsLabel.Location = new System.Drawing.Point(21, 15);
+            this.statsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
+            this.statsLabel.Location = new System.Drawing.Point(45, 7);
             this.statsLabel.Name = "statsLabel";
             this.statsLabel.Size = new System.Drawing.Size(106, 29);
             this.statsLabel.TabIndex = 2;
@@ -180,45 +182,46 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.settingsWindow);
-            this.panel1.Controls.Add(this.homeWindow);
             this.panel1.Controls.Add(this.statsWindow);
+            this.panel1.Controls.Add(this.homeWindow);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(142, 37);
+            this.panel1.Location = new System.Drawing.Point(190, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(632, 428);
+            this.panel1.Size = new System.Drawing.Size(672, 432);
             this.panel1.TabIndex = 6;
             // 
             // settingsWindow
             // 
-            this.settingsWindow.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.settingsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.settingsWindow.Location = new System.Drawing.Point(0, 0);
             this.settingsWindow.Name = "settingsWindow";
-            this.settingsWindow.Size = new System.Drawing.Size(632, 428);
+            this.settingsWindow.Size = new System.Drawing.Size(672, 432);
             this.settingsWindow.TabIndex = 1;
-            // 
-            // homeWindow
-            // 
-            this.homeWindow.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.homeWindow.Location = new System.Drawing.Point(0, 0);
-            this.homeWindow.Name = "homeWindow";
-            this.homeWindow.Size = new System.Drawing.Size(632, 428);
-            this.homeWindow.TabIndex = 0;
             // 
             // statsWindow
             // 
-            this.statsWindow.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.statsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.statsWindow.Location = new System.Drawing.Point(0, 0);
             this.statsWindow.Name = "statsWindow";
-            this.statsWindow.Size = new System.Drawing.Size(632, 428);
+            this.statsWindow.Size = new System.Drawing.Size(672, 432);
             this.statsWindow.TabIndex = 2;
+            // 
+            // homeWindow
+            // 
+            this.homeWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
+            this.homeWindow.Location = new System.Drawing.Point(0, 0);
+            this.homeWindow.Name = "homeWindow";
+            this.homeWindow.Size = new System.Drawing.Size(672, 432);
+            this.homeWindow.TabIndex = 0;
+            this.homeWindow.Load += new System.EventHandler(this.homeWindow_Load);
             // 
             // smallPanelBottom
             // 
-            this.smallPanelBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(107)))), ((int)(((byte)(135)))));
-            this.smallPanelBottom.Location = new System.Drawing.Point(0, 428);
+            this.smallPanelBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.smallPanelBottom.Location = new System.Drawing.Point(0, 430);
             this.smallPanelBottom.Margin = new System.Windows.Forms.Padding(0);
             this.smallPanelBottom.Name = "smallPanelBottom";
-            this.smallPanelBottom.Size = new System.Drawing.Size(142, 37);
+            this.smallPanelBottom.Size = new System.Drawing.Size(190, 53);
             this.smallPanelBottom.TabIndex = 7;
             this.smallPanelBottom.TabStop = false;
             // 
@@ -226,13 +229,13 @@
             // 
             this.lb_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_minimize.AutoSize = true;
-            this.lb_minimize.BackColor = System.Drawing.Color.LightGray;
-            this.lb_minimize.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_minimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            this.lb_minimize.Location = new System.Drawing.Point(709, 0);
+            this.lb_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
+            this.lb_minimize.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_minimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.lb_minimize.Location = new System.Drawing.Point(798, 12);
             this.lb_minimize.Margin = new System.Windows.Forms.Padding(0);
             this.lb_minimize.Name = "lb_minimize";
-            this.lb_minimize.Size = new System.Drawing.Size(35, 37);
+            this.lb_minimize.Size = new System.Drawing.Size(25, 28);
             this.lb_minimize.TabIndex = 8;
             this.lb_minimize.Text = "—";
             this.lb_minimize.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lb_minimize_MouseClick);
@@ -242,10 +245,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(774, 465);
+            this.ClientSize = new System.Drawing.Size(862, 483);
             this.Controls.Add(this.lb_minimize);
-            this.Controls.Add(this.smallPanelBottom);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.smallPanelBottom);
             this.Controls.Add(this.lb_close);
             this.Controls.Add(this.settingsPanel);
             this.Controls.Add(this.statsPanel);
@@ -273,6 +276,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void homeWindow_Load(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         #endregion
