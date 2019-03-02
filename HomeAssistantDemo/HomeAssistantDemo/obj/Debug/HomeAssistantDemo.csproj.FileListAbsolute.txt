@@ -16,3 +16,4 @@ C:\Users\Pavel\Desktop\Home Assistant\HomeAssistantDemo\HomeAssistantDemo\obj\De
 C:\Users\Pavel\Desktop\Home Assistant\HomeAssistantDemo\HomeAssistantDemo\obj\Debug\HomeAssistantDemo.HomeWindow.resources
 C:\Users\Pavel\Desktop\Home Assistant\HomeAssistantDemo\HomeAssistantDemo\obj\Debug\HomeAssistantDemo.SettingWindow.resources
 C:\Users\Pavel\Desktop\Home Assistant\HomeAssistantDemo\HomeAssistantDemo\obj\Debug\HomeAssistantDemo.StatsWindow.resources
+C:\Users\Pavel\Desktop\Home Assistant\HomeAssistantDemo\HomeAssistantDemo\obj\Debug\HomeAssistantDemo.csprojAssemblyReference.cache

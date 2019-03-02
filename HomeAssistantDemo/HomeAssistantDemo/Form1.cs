@@ -23,7 +23,7 @@ namespace HomeAssistantDemo
             // rounds the corners of the program window
             this.FormBorderStyle = FormBorderStyle.None;    
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            homePanel.BackColor = Color.FromArgb(25, 66, 80);   //loads the program with "clicked" button
+            homePanel.BackColor = Color.FromArgb(25, 66, 80);   //loads the program with a "clicked" button
 
         }
 
@@ -115,13 +115,26 @@ namespace HomeAssistantDemo
         #region - Allows moving of the form -
 
         int mouseX = 0, mouseY = 0; 
-        bool clicked = false; 
-        
-        private void topPanel_MouseDown(object sender, MouseEventArgs e)
+        private bool clicked = false; 
+
+        public bool Clicked
+        {
+            get
+            {
+                return this.clicked;
+            }
+            set
+            {
+                this.clicked = value;
+            }
+        }
+
+    public void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
             clicked = true;
             mouseX = e.X;
             mouseY = e.Y;
+            
         }
 
         private void topPanel_MouseMove(object sender, MouseEventArgs e)

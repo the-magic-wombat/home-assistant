@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.temperaturePicture = new System.Windows.Forms.PictureBox();
             this.humidityPicture = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_temp = new System.Windows.Forms.Label();
+            this.lb_humid = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.temperaturePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.humidityPicture)).BeginInit();
             this.SuspendLayout();
@@ -59,35 +61,41 @@
             this.humidityPicture.TabIndex = 0;
             this.humidityPicture.TabStop = false;
             // 
-            // label1
+            // lb_temp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(320, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "0°C";
+            this.lb_temp.AutoSize = true;
+            this.lb_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_temp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.lb_temp.Location = new System.Drawing.Point(325, 235);
+            this.lb_temp.Name = "lb_temp";
+            this.lb_temp.Size = new System.Drawing.Size(75, 39);
+            this.lb_temp.TabIndex = 2;
+            this.lb_temp.Text = "0°C";
             // 
-            // label2
+            // lb_humid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label2.Location = new System.Drawing.Point(320, 235);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 39);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "0%";
+            this.lb_humid.AutoSize = true;
+            this.lb_humid.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_humid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.lb_humid.Location = new System.Drawing.Point(333, 130);
+            this.lb_humid.Name = "lb_humid";
+            this.lb_humid.Size = new System.Drawing.Size(67, 39);
+            this.lb_humid.TabIndex = 3;
+            this.lb_humid.Text = "0%";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // HomeWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_humid);
+            this.Controls.Add(this.lb_temp);
             this.Controls.Add(this.temperaturePicture);
             this.Controls.Add(this.humidityPicture);
             this.Name = "HomeWindow";
@@ -104,7 +112,8 @@
 
         private System.Windows.Forms.PictureBox temperaturePicture;
         private System.Windows.Forms.PictureBox humidityPicture;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_temp;
+        private System.Windows.Forms.Label lb_humid;
+        private System.Windows.Forms.Timer timer1;
     }
 }
