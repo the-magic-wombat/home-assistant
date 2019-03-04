@@ -30,6 +30,7 @@ namespace HomeAssistantDemo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.lb_close = new System.Windows.Forms.Label();
             this.sidePanel = new System.Windows.Forms.PictureBox();
             this.topPanel = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,8 @@ namespace HomeAssistantDemo
             this.homeWindow = new HomeAssistantDemo.HomeWindow();
             this.smallPanelBottom = new System.Windows.Forms.PictureBox();
             this.lb_minimize = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sidePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smallPanelTop)).BeginInit();
@@ -61,12 +64,12 @@ namespace HomeAssistantDemo
             this.lb_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_close.AutoSize = true;
             this.lb_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
-            this.lb_close.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_close.Font = new System.Drawing.Font("Consolas", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.lb_close.Location = new System.Drawing.Point(828, 12);
+            this.lb_close.Location = new System.Drawing.Point(648, 4);
             this.lb_close.Margin = new System.Windows.Forms.Padding(0);
             this.lb_close.Name = "lb_close";
-            this.lb_close.Size = new System.Drawing.Size(25, 28);
+            this.lb_close.Size = new System.Drawing.Size(34, 37);
             this.lb_close.TabIndex = 0;
             this.lb_close.Text = "x";
             this.lb_close.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lb_close_MouseClick);
@@ -75,9 +78,9 @@ namespace HomeAssistantDemo
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel.Location = new System.Drawing.Point(0, 51);
+            this.sidePanel.Location = new System.Drawing.Point(0, 45);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(190, 432);
+            this.sidePanel.Size = new System.Drawing.Size(190, 356);
             this.sidePanel.TabIndex = 1;
             this.sidePanel.TabStop = false;
             // 
@@ -87,7 +90,7 @@ namespace HomeAssistantDemo
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(862, 51);
+            this.topPanel.Size = new System.Drawing.Size(692, 45);
             this.topPanel.TabIndex = 2;
             this.topPanel.TabStop = false;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
@@ -96,11 +99,11 @@ namespace HomeAssistantDemo
             // 
             // smallPanelTop
             // 
-            this.smallPanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(90)))), ((int)(((byte)(105)))));
+            this.smallPanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
             this.smallPanelTop.Location = new System.Drawing.Point(0, 0);
             this.smallPanelTop.Margin = new System.Windows.Forms.Padding(0);
             this.smallPanelTop.Name = "smallPanelTop";
-            this.smallPanelTop.Size = new System.Drawing.Size(190, 51);
+            this.smallPanelTop.Size = new System.Drawing.Size(190, 45);
             this.smallPanelTop.TabIndex = 3;
             this.smallPanelTop.TabStop = false;
             // 
@@ -108,10 +111,10 @@ namespace HomeAssistantDemo
             // 
             this.homePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.homePanel.Controls.Add(this.homeLabel);
-            this.homePanel.Location = new System.Drawing.Point(0, 51);
+            this.homePanel.Location = new System.Drawing.Point(0, 45);
             this.homePanel.Margin = new System.Windows.Forms.Padding(0);
             this.homePanel.Name = "homePanel";
-            this.homePanel.Size = new System.Drawing.Size(190, 47);
+            this.homePanel.Size = new System.Drawing.Size(190, 65);
             this.homePanel.TabIndex = 4;
             this.homePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homePanel_MouseClick);
             // 
@@ -122,7 +125,7 @@ namespace HomeAssistantDemo
             this.homeLabel.BackColor = System.Drawing.Color.Transparent;
             this.homeLabel.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
-            this.homeLabel.Location = new System.Drawing.Point(54, 9);
+            this.homeLabel.Location = new System.Drawing.Point(54, 18);
             this.homeLabel.Name = "homeLabel";
             this.homeLabel.Size = new System.Drawing.Size(75, 29);
             this.homeLabel.TabIndex = 0;
@@ -133,10 +136,10 @@ namespace HomeAssistantDemo
             // 
             this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.settingsPanel.Controls.Add(this.settingsLabel);
-            this.settingsPanel.Location = new System.Drawing.Point(0, 145);
+            this.settingsPanel.Location = new System.Drawing.Point(0, 171);
             this.settingsPanel.Margin = new System.Windows.Forms.Padding(0);
             this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(190, 47);
+            this.settingsPanel.Size = new System.Drawing.Size(190, 65);
             this.settingsPanel.TabIndex = 5;
             this.settingsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.settingsPanel_MouseClick);
             // 
@@ -147,7 +150,7 @@ namespace HomeAssistantDemo
             this.settingsLabel.BackColor = System.Drawing.Color.Transparent;
             this.settingsLabel.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
-            this.settingsLabel.Location = new System.Drawing.Point(45, 9);
+            this.settingsLabel.Location = new System.Drawing.Point(45, 18);
             this.settingsLabel.Name = "settingsLabel";
             this.settingsLabel.Size = new System.Drawing.Size(97, 29);
             this.settingsLabel.TabIndex = 1;
@@ -158,10 +161,10 @@ namespace HomeAssistantDemo
             // 
             this.statsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(117)))), ((int)(((byte)(131)))));
             this.statsPanel.Controls.Add(this.statsLabel);
-            this.statsPanel.Location = new System.Drawing.Point(0, 98);
+            this.statsPanel.Location = new System.Drawing.Point(0, 109);
             this.statsPanel.Margin = new System.Windows.Forms.Padding(0);
             this.statsPanel.Name = "statsPanel";
-            this.statsPanel.Size = new System.Drawing.Size(190, 47);
+            this.statsPanel.Size = new System.Drawing.Size(190, 65);
             this.statsPanel.TabIndex = 5;
             this.statsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.statsPanel_MouseClick);
             // 
@@ -172,7 +175,7 @@ namespace HomeAssistantDemo
             this.statsLabel.BackColor = System.Drawing.Color.Transparent;
             this.statsLabel.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
-            this.statsLabel.Location = new System.Drawing.Point(45, 7);
+            this.statsLabel.Location = new System.Drawing.Point(45, 16);
             this.statsLabel.Name = "statsLabel";
             this.statsLabel.Size = new System.Drawing.Size(106, 29);
             this.statsLabel.TabIndex = 2;
@@ -185,9 +188,9 @@ namespace HomeAssistantDemo
             this.panel1.Controls.Add(this.statsWindow);
             this.panel1.Controls.Add(this.homeWindow);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(190, 51);
+            this.panel1.Location = new System.Drawing.Point(190, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(672, 432);
+            this.panel1.Size = new System.Drawing.Size(502, 356);
             this.panel1.TabIndex = 6;
             // 
             // settingsWindow
@@ -211,17 +214,17 @@ namespace HomeAssistantDemo
             this.homeWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.homeWindow.Location = new System.Drawing.Point(0, 0);
             this.homeWindow.Name = "homeWindow";
-            this.homeWindow.Size = new System.Drawing.Size(672, 432);
+            this.homeWindow.Size = new System.Drawing.Size(502, 356);
             this.homeWindow.TabIndex = 0;
             this.homeWindow.Load += new System.EventHandler(this.homeWindow_Load);
             // 
             // smallPanelBottom
             // 
             this.smallPanelBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.smallPanelBottom.Location = new System.Drawing.Point(0, 430);
+            this.smallPanelBottom.Location = new System.Drawing.Point(0, 336);
             this.smallPanelBottom.Margin = new System.Windows.Forms.Padding(0);
             this.smallPanelBottom.Name = "smallPanelBottom";
-            this.smallPanelBottom.Size = new System.Drawing.Size(190, 53);
+            this.smallPanelBottom.Size = new System.Drawing.Size(190, 65);
             this.smallPanelBottom.TabIndex = 7;
             this.smallPanelBottom.TabStop = false;
             // 
@@ -230,22 +233,48 @@ namespace HomeAssistantDemo
             this.lb_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_minimize.AutoSize = true;
             this.lb_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
-            this.lb_minimize.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_minimize.Font = new System.Drawing.Font("Consolas", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_minimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.lb_minimize.Location = new System.Drawing.Point(798, 12);
+            this.lb_minimize.Location = new System.Drawing.Point(623, 5);
             this.lb_minimize.Margin = new System.Windows.Forms.Padding(0);
             this.lb_minimize.Name = "lb_minimize";
-            this.lb_minimize.Size = new System.Drawing.Size(25, 28);
+            this.lb_minimize.Size = new System.Drawing.Size(31, 36);
             this.lb_minimize.TabIndex = 8;
             this.lb_minimize.Text = "—";
             this.lb_minimize.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lb_minimize_MouseClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(180)))), ((int)(((byte)(187)))));
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.label1.Location = new System.Drawing.Point(251, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(239, 42);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Home Assistant";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(32, 357);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 23);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Version: 1.0.0";
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(862, 483);
+            this.ClientSize = new System.Drawing.Size(692, 401);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_minimize);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.smallPanelBottom);
@@ -253,10 +282,11 @@ namespace HomeAssistantDemo
             this.Controls.Add(this.settingsPanel);
             this.Controls.Add(this.statsPanel);
             this.Controls.Add(this.homePanel);
-            this.Controls.Add(this.smallPanelTop);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.topPanel);
+            this.Controls.Add(this.smallPanelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -301,6 +331,8 @@ namespace HomeAssistantDemo
         private System.Windows.Forms.Label settingsLabel;
         private System.Windows.Forms.PictureBox smallPanelBottom;
         private System.Windows.Forms.Label lb_minimize;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

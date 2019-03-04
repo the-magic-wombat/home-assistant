@@ -73,6 +73,26 @@ namespace HomeAssistantDemo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reload_icon__colored_ {
+            get {
+                object obj = ResourceManager.GetObject("reload icon (colored)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reload_icon__gray_ {
+            get {
+                object obj = ResourceManager.GetObject("reload icon (gray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap temperature_symbol__colored_ {
             get {
                 object obj = ResourceManager.GetObject("temperature symbol (colored)", resourceCulture);

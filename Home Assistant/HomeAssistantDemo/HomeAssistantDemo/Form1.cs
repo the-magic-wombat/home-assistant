@@ -14,8 +14,6 @@ namespace HomeAssistantDemo
 {
     public partial class mainForm : Form
     {
-        
-
         public mainForm()
         {
             InitializeComponent();
@@ -23,7 +21,7 @@ namespace HomeAssistantDemo
             // rounds the corners of the program window
             this.FormBorderStyle = FormBorderStyle.None;    
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            homePanel.BackColor = Color.FromArgb(25, 66, 80);   //loads the program with "clicked" button
+            homePanel.BackColor = Color.FromArgb(25, 66, 80);   //loads the program with a "clicked" button
 
         }
 
@@ -94,6 +92,21 @@ namespace HomeAssistantDemo
                     "Uid = MxOJ0NTKIO; " +
                     "Pwd = 7QwUSwSfbA ");
 
+        private bool isAvailable(MySqlConnection conn)  //checks if the connection is working
+        {
+            try
+            {
+                conn.Open();
+                conn.Close();
+            }
+            catch (MySqlException)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         #endregion
 
 
@@ -112,6 +125,7 @@ namespace HomeAssistantDemo
         # endregion
 
 
+        //TO DO: move trough the label
         #region - Allows moving of the form -
 
         int mouseX = 0, mouseY = 0; 
@@ -129,12 +143,11 @@ namespace HomeAssistantDemo
             }
         }
 
-    public void topPanel_MouseDown(object sender, MouseEventArgs e)
+        public void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
             clicked = true;
             mouseX = e.X;
-            mouseY = e.Y;
-            
+            mouseY = e.Y;           
         }
 
         private void topPanel_MouseMove(object sender, MouseEventArgs e)
@@ -150,12 +163,8 @@ namespace HomeAssistantDemo
             clicked = false;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        #endregion
+        #endregion  
 
 
         #region - Creates round rectangle (to round the edges of the window) - 
