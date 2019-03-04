@@ -51,7 +51,7 @@
             this.fButton.AutoSize = true;
             this.fButton.Font = new System.Drawing.Font("Trebuchet MS", 16F);
             this.fButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.fButton.Location = new System.Drawing.Point(168, 247);
+            this.fButton.Location = new System.Drawing.Point(170, 249);
             this.fButton.Name = "fButton";
             this.fButton.Size = new System.Drawing.Size(138, 31);
             this.fButton.TabIndex = 15;
@@ -65,7 +65,7 @@
             this.cButton.Checked = true;
             this.cButton.Font = new System.Drawing.Font("Trebuchet MS", 16F);
             this.cButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.cButton.Location = new System.Drawing.Point(25, 247);
+            this.cButton.Location = new System.Drawing.Point(27, 249);
             this.cButton.Name = "cButton";
             this.cButton.Size = new System.Drawing.Size(97, 31);
             this.cButton.TabIndex = 16;
@@ -80,7 +80,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label4.Location = new System.Drawing.Point(20, 205);
+            this.label4.Location = new System.Drawing.Point(22, 207);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(213, 27);
             this.label4.TabIndex = 19;
@@ -92,7 +92,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(20, 49);
+            this.label1.Location = new System.Drawing.Point(22, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 27);
             this.label1.TabIndex = 20;
@@ -104,7 +104,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label2.Location = new System.Drawing.Point(20, 83);
+            this.label2.Location = new System.Drawing.Point(22, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 27);
             this.label2.TabIndex = 21;
@@ -114,7 +114,7 @@
             // 
             this.minTempBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.minTempBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.minTempBox.Location = new System.Drawing.Point(287, 54);
+            this.minTempBox.Location = new System.Drawing.Point(289, 75);
             this.minTempBox.Name = "minTempBox";
             this.minTempBox.Size = new System.Drawing.Size(40, 20);
             this.minTempBox.TabIndex = 22;
@@ -126,7 +126,7 @@
             this.lb_confirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.lb_confirm.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_confirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.lb_confirm.Location = new System.Drawing.Point(386, 66);
+            this.lb_confirm.Location = new System.Drawing.Point(388, 87);
             this.lb_confirm.Name = "lb_confirm";
             this.lb_confirm.Size = new System.Drawing.Size(103, 29);
             this.lb_confirm.TabIndex = 23;
@@ -137,7 +137,7 @@
             // 
             this.maxTempBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.maxTempBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.maxTempBox.Location = new System.Drawing.Point(333, 54);
+            this.maxTempBox.Location = new System.Drawing.Point(335, 75);
             this.maxTempBox.Name = "maxTempBox";
             this.maxTempBox.Size = new System.Drawing.Size(40, 20);
             this.maxTempBox.TabIndex = 24;
@@ -149,7 +149,7 @@
             this.lb_success.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.lb_success.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_success.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.lb_success.Location = new System.Drawing.Point(130, 125);
+            this.lb_success.Location = new System.Drawing.Point(22, 148);
             this.lb_success.Name = "lb_success";
             this.lb_success.Size = new System.Drawing.Size(250, 29);
             this.lb_success.TabIndex = 25;
@@ -165,7 +165,7 @@
             // 
             this.maxHumidBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.maxHumidBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.maxHumidBox.Location = new System.Drawing.Point(333, 86);
+            this.maxHumidBox.Location = new System.Drawing.Point(335, 107);
             this.maxHumidBox.Name = "maxHumidBox";
             this.maxHumidBox.Size = new System.Drawing.Size(40, 20);
             this.maxHumidBox.TabIndex = 28;
@@ -175,7 +175,7 @@
             // 
             this.minHumidBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.minHumidBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.minHumidBox.Location = new System.Drawing.Point(287, 86);
+            this.minHumidBox.Location = new System.Drawing.Point(289, 107);
             this.minHumidBox.Name = "minHumidBox";
             this.minHumidBox.Size = new System.Drawing.Size(40, 20);
             this.minHumidBox.TabIndex = 26;
@@ -187,7 +187,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(328, 17);
+            this.label3.Location = new System.Drawing.Point(330, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 27);
             this.label3.TabIndex = 29;
@@ -199,7 +199,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.label5.Location = new System.Drawing.Point(282, 17);
+            this.label5.Location = new System.Drawing.Point(284, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 27);
             this.label5.TabIndex = 30;
@@ -210,7 +210,7 @@
             this.kButton.AutoSize = true;
             this.kButton.Font = new System.Drawing.Font("Trebuchet MS", 16F);
             this.kButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(66)))), ((int)(((byte)(80)))));
-            this.kButton.Location = new System.Drawing.Point(351, 247);
+            this.kButton.Location = new System.Drawing.Point(353, 249);
             this.kButton.Name = "kButton";
             this.kButton.Size = new System.Drawing.Size(89, 31);
             this.kButton.TabIndex = 31;

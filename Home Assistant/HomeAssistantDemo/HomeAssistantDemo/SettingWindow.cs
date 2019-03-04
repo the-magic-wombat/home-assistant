@@ -155,7 +155,7 @@ namespace HomeAssistantDemo
                     minHumidBox.Text = HomeWindow.humid_min.ToString();
                     maxHumidBox.Text = HomeWindow.humid_max.ToString();
 
-                    lb_success.Text = "Humidity must be bewtween 0% and 100%";
+                    lb_success.Text = "Humidity must be bewtween 0 and 100";
                     lb_success.ForeColor = Color.Maroon;
                     lb_success.Visible = true;
                     timer1.Start();
@@ -190,7 +190,6 @@ namespace HomeAssistantDemo
             }
         }
 
-        #endregion
-      
+        #endregion   
     }
 }

@@ -26,8 +26,9 @@ namespace HomeAssistantDemo
         private void HomeWindow_Load(object sender, EventArgs e)
         {
             this.Visible = true;
-            lb_temp_C.Text = Math.Round(latestTemperature(), 2) + "°" + tempScale;   //sets the temperature to the latest one
-            lb_humid.Text = Math.Round(latestHumidity(), 2) + "%";  //sets the humidity to the latest one
+            //lb_temp_C.Text = Math.Round(latestTemperature(), 2) + "°" + tempScale;   //sets the temperature to the latest one
+            //lb_humid.Text = Math.Round(latestHumidity(), 2) + "%";  //sets the humidity to the latest one
+            timer1_Tick(sender, e);
             onlineOfflineSwitch();
         }
 
@@ -48,11 +49,13 @@ namespace HomeAssistantDemo
                 lb_status.Text = "Online";
                 lb_status.ForeColor = Color.DarkGreen;
                 timer1.Start();
+                //TO DO: Speed up data refresh after restored connection
             }
             else
             {
                 lb_status.Text = "Offline";
                 lb_status.ForeColor = Color.Maroon;
+                timer1.Stop();
             }
         }
         #endregion
@@ -63,8 +66,9 @@ namespace HomeAssistantDemo
 
         private void timer1_Tick(object sender, EventArgs e)    //timer for updating temperature info
         {
-           
-            if (MouseButtons == MouseButtons.None )  //the if prevents lag when moving the form
+            onlineOfflineSwitch();
+
+            if (MouseButtons == MouseButtons.None)  //the if prevents lag when moving the form
             {
                 double currentTemp = Math.Round(latestTemperature(), 2);
                 double currentHumid = Math.Round(latestHumidity(), 2);
@@ -134,9 +138,8 @@ namespace HomeAssistantDemo
                 else
                 {
                     lb_humidity_status.Text = "Normal";
-                }
-            }
-                      
+                }               
+            }          
         }
 
         private double latestTemperature() //returns the latest info about the temperature from the DB
@@ -195,6 +198,7 @@ namespace HomeAssistantDemo
         {
             try
             {
+                conn.Close();
                 conn.Open();
                 conn.Close();
             }
