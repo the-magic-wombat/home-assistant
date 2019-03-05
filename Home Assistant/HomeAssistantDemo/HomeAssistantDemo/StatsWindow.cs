@@ -117,7 +117,7 @@ namespace HomeAssistantDemo
                     "SELECT humidity FROM MxOJ0NTKIO.current ORDER BY id DESC LIMIT 10", dbCon);
 
                     MySqlCommand commandTime = new MySqlCommand(
-                    "SELECT time_created FROM MxOJ0NTKIO.current ORDER BY id DESC LIMIT 10", dbCon);
+                    "SELECT TIMESTAMPADD(HOUR, 2, time_created) FROM MxOJ0NTKIO.current ORDER BY id DESC LIMIT 10", dbCon);
 
                     MySqlDataReader readerTemp = commandTemp.ExecuteReader();
                     using (readerTemp)
@@ -146,7 +146,7 @@ namespace HomeAssistantDemo
                     {
                         while (readerTime.Read())
                         {
-                            string a = readerTime["time_created"].ToString();
+                            string a = readerTime["TIMESTAMPADD(HOUR, 2, time_created)"].ToString();
                             a = a.Remove(0, 11);
                             a = a.Substring(0, a.Length - 3);
                             timeValues.Add(a);
